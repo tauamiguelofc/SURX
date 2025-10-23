@@ -2,9 +2,8 @@ import discord
 from discord import option
 from discord.ext import commands
 import os
-from dotenv import load_dotenv
 
-load_dotenv()
+# Pega o token direto do Codespaces Environment Secrets
 TOKEN = os.getenv("DISCORD_TOKEN")
 
 bot = commands.Bot(intents=discord.Intents.all())

@@ -1,13 +1,13 @@
 from flask import Flask, render_template, request, redirect, session
 from pymongo import MongoClient
-from dotenv import load_dotenv
 import os
 
-load_dotenv()
+# Cria app Flask
 app = Flask(__name__)
-app.secret_key = os.getenv("SECRET_KEY")
+app.secret_key = os.getenv("SECRET_KEY")  # pega direto do Codespaces secret
 
-client = MongoClient(os.getenv("MONGO_URI"))
+# Conecta ao MongoDB
+client = MongoClient(os.getenv("MONGO_URI"))  # pega secret
 db = client["surx_db"]
 users = db["users"]
 
