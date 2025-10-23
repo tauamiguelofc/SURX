@@ -1,2 +1,28 @@
-<h1>Bem-vindo ao painel do Bot SURX</h1>
-<a href="/login">Entrar</a> | <a href="/register">Registrar</a>
+<!-- web/templates/index.html -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Painel SURX</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Bem-vindo ao painel do Bot SURX</h1>
+      <div class="nav-links">
+        <a href="/login">Entrar</a>
+        <a href="/register">Registrar</a>
+      </div>
+    </div>
+
+    <p class="lead">Painel de controle do bot — interface escura, responsiva e pronta para integrar com o bot.</p>
+
+    <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:18px;">
+      <a class="btn-primary" href="/login">Acessar Painel</a>
+      <a class="btn-primary" href="/funcoes">Ver Funções</a>
+    </div>
+  </div>
+</body>
+</html>

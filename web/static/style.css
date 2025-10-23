@@ -1,15 +1,105 @@
+/* web/static/style.css */
+/* Reset básico */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* Body estilo Discord */
 body {
   background-color: #121212;
   color: #eee;
-  font-family: Arial, sans-serif;
-  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
 }
-input, button {
-  background: #1f1f1f;
-  color: white;
+
+/* Container central */
+.container {
+  width: 100%;
+  max-width: 760px;
+  margin: 30px auto;
+  padding: 28px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.02));
+  border: 1px solid rgba(255,255,255,0.03);
+  border-radius: 12px;
+  box-shadow: 0 6px 30px rgba(0,0,0,0.6);
+}
+
+/* Cabeçalho */
+.header {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.header h1 { font-size: 1.4rem; color: #fff; }
+
+/* Links estilo Discord */
+.nav-links {
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+.nav-links a {
+  background: #1f2330;
+  color: #e6eef8;
+  padding: 8px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.03);
+  transition: background 0.15s, transform 0.08s;
+}
+.nav-links a:hover { background:#2b2f3a; transform: translateY(-2px); }
+
+/* Texto central */
+.lead {
+  color: #cfd8e3;
+  margin: 18px 0 8px;
+  font-size: 0.98rem;
+}
+
+/* Buttons principais */
+.btn-primary {
+  display:inline-block;
+  background: linear-gradient(180deg, #7289da, #5b6eae);
+  color:#fff;
+  padding: 10px 18px;
+  border-radius: 10px;
+  text-decoration:none;
+  font-weight:600;
   border: none;
-  padding: 10px;
-  margin: 5px;
-  border-radius: 5px;
+  transition: transform 0.08s, filter 0.12s;
 }
-button:hover { background: #333; }
+.btn-primary:hover { transform: translateY(-3px); filter:brightness(1.05); }
+
+/* Form container (usado nas páginas de login) */
+.form-card {
+  margin-top: 12px;
+  padding: 18px;
+  background: #0f1113;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.02);
+}
+
+/* Inputs */
+input, textarea {
+  width:100%;
+  max-width: 100%;
+  padding: 12px 14px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #2b2f36;
+  background:#16181a;
+  color:#eee;
+  outline:none;
+}
+input:focus { border-color:#7289da; box-shadow:0 0 0 3px rgba(114,137,218,0.08); }
+
+/* Responsividade */
+@media (max-width:600px){
+  .container { padding:16px; margin:18px 6px; }
+  .header h1 { font-size:1.1rem; }
+}

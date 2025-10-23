@@ -1,6 +1,29 @@
-<h2>Login</h2>
-<form method="POST">
-  <input name="username" placeholder="Usuário">
-  <input name="password" placeholder="Senha" type="password">
-  <button type="submit">Entrar</button>
-</form>
+<!-- web/templates/login.html -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Login - SURX</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Login</h1>
+      <div class="nav-links">
+        <a href="/">Voltar</a>
+        <a href="/register">Registrar</a>
+      </div>
+    </div>
+
+    <div class="form-card">
+      <form method="post" action="/login">
+        <input name="username" placeholder="Usuário" required />
+        <input name="password" placeholder="Senha" type="password" required />
+        <button class="btn-primary" type="submit">Entrar</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

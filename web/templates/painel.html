@@ -1,2 +1,29 @@
-<h1>Painel do {{ user }}</h1>
-<p>Configure aqui as funções do bot futuramente.</p>
+<!-- web/templates/painel.html -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Painel - SURX</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Painel do {{ user }}</h1>
+      <div class="nav-links">
+        <a href="/funcoes">Funções</a>
+        <a href="/logout">Sair</a>
+      </div>
+    </div>
+
+    <p class="lead">Use esse painel para configurar o bot e ver logs.</p>
+
+    <!-- Exemplos de botões que acionam funções (ainda precisam do backend implementado) -->
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:18px;">
+      <button class="btn-primary" onclick="alert('Ainda não configurado')">Enviar mensagem</button>
+      <button class="btn-primary" onclick="alert('Ainda não configurado')">Atualizar config</button>
+    </div>
+  </div>
+</body>
+</html>
