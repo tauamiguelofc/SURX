@@ -47,10 +47,7 @@ A ideia é simples: unir o poder da automação do Discord com o controle total 
 ┣ 📜 README.md
 ┗ 📜 .env.example
 ```
-yaml
-Copiar código
 
----
 
 ## 🚀 **Como Executar o Projeto**
 
