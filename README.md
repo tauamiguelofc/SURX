@@ -33,7 +33,7 @@ A ideia é simples: unir o poder da automação do Discord com o controle total 
 ---
 
 ## 🗂️ **Estrutura do Projeto**
-
+```
 📦 projeto/
 ┣ 📁 web/ # Painel Flask
 ┃ ┣ 📜 app.py
@@ -46,7 +46,7 @@ A ideia é simples: unir o poder da automação do Discord com o controle total 
 ┣ 📜 requirements.txt
 ┣ 📜 README.md
 ┗ 📜 .env.example
-
+```
 yaml
 Copiar código
 
@@ -70,20 +70,23 @@ Copiar código
 pip install -r requirements.txt
 4️⃣ Configure o .env
 Crie um arquivo .env baseado no .env.example:
-
 env
 Copiar código
 DISCORD_TOKEN=seu_token_aqui
 SECRET_KEY=uma_chave_segura
 5️⃣ Inicie o Painel Flask
-bash
+´´´bash
 Copiar código
 python web/app.py
 6️⃣ Inicie o Bot
+
 bash
 Copiar código
 python bot/bot.py
-🧭 Boas Práticas e Regras de Uso
+```
+
+
+# 🧭 Boas Práticas e Regras de Uso
 📘 1. Respeite os limites da API.
 Evite loops infinitos ou flood de mensagens automáticas.
 
@@ -96,17 +99,19 @@ Jamais publique seu DISCORD_TOKEN no GitHub.
 
 💬 5. Contribuições são bem-vindas!
 Envie PRs organizados e com commits descritivos.
+---
 
-🖼️ Visual Preview
+**🖼️ Visual Preview**
 <div align="center">
-
 </div>
-👥 Créditos e Contato
-Desenvolvido por Tauã
-📧 Email: seuemail@exemplo.com
-🌐 Projeto independente, em constante evolução.
+
+**👥 Créditos e Contato**
+
+**Desenvolvido por Tauã**
+**📧 Email: tauamiguel78@gmail.com**
+
+**🌐 Projeto independente, em constante evolução.**
 
 <div align="center">
 ✨ “Automação inteligente é o futuro — e o futuro começa no seu terminal.” ✨
-
-</div> ```
+</div>
